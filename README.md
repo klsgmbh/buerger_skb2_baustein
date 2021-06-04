@@ -22,22 +22,22 @@ Anschließend den Ordner „ui-rbs2“ aus dem Bausteinverzeichnis buerger_skb2_
 Die Dateien „staat_2019_04_01.xml“, "rbs-bez-liste-xml.xml" und "rbs_url.xml" aus dem Bausteinordner buerger_skb2_baustein-Dateien/WEB-INF/data in das Modellverzeichnis <Modellname-Assistent>-Dateien/WEB-INF/data kopieren.
 
 
-2. Anpassung der Modellattribute (Erweiterungen und ScriptEngine)
+<h3> 2. Anpassung der Modellattribute (Erweiterungen und ScriptEngine) </h3>
 
 Mit der Integration des Bausteins ist eine Anpassung der folgenden Modellattribute erforderlich:
 
 Attribut „Erweiterungen“: hier wird der Wert „ui-rbs2“ hinterlegt
 Attribut „ScriptEngine“: hier wird der Wert „rhino“ hinterlegt
 
-3. Composer-Datei des Antragsassistenten öffnen und den Baustein "buerger_skb2_baustein" als Referenz einfügen
+<h3> 3. Composer-Datei des Antragsassistenten öffnen und den Baustein "buerger_skb2_baustein" als Referenz einfügen </h3>
 
-4. Den Baustein mit den entsprechenden Satz mit einer Relation des Typs "Association" verbinden und eine Gliederungsnummer vergeben
+<h3> 4. Den Baustein mit den entsprechenden Satz mit einer Relation des Typs "Association" verbinden und eine Gliederungsnummer vergeben </h3>
 
-5. Einbindung des xml-Feldes "urlrbs" (Umgehungslösung)
+<h3> 5. Einbindung des xml-Feldes "urlrbs" (Umgehungslösung) </h3>
 
 Das im Baustein enthaltene xml-Feld "urlrbs" muss, trotz des im Attribut hinterlegten Wertes "CONTEXT", aus dem Baustein kopiert und an den zum Baustein gehörenden Satz angebunden werden (siehe Abbildung rechts).
 
-Anmerkungen:
+<h2> Anmerkungen:</h2>
 
 Die Umsetzung der unterschiedlichen RBS-Szenarien ist in der Dokumentation des Bausteins "rbs_baustein_req_v2" dokumentiert.
 
