@@ -4,17 +4,17 @@ SKB-Personendaten, - Kontaktdaten,  und - Adressdaten
 
 Hilfsfelder sind im Antragsassistenten nicht sichtbar und werden für die Berechnung oder das Speichern/Abrufen von Werten verwendet.
 
-Varianten
+<h2>Varianten</h2>
 
  geo-bezogen (Auswahl hat momentan keine Relevanz)
 
-Verwendung
+<h2>Verwendung</h2>
 
 Der Baustein wird in Antragsassistenten eingebaut, in denen die SKB2-Daten abgerufen werden sollen.
 
-Folgende Schritte sind zur Integration des Bausteins durchzuführen:
+<h2>Folgende Schritte sind zur Integration des Bausteins durchzuführen:</h2>
 
-1. Anpassung des Modellverzeichnisses (Plugin-Dateien und XML-Dateien)
+<h3> 1. Anpassung des Modellverzeichnisses (Plugin-Dateien und XML-Dateien) </h3>
 
 Dazu müssen die Bausteindateien im Modellverzeichnis, idealerweise in einem separaten Bausteinordner, abgelegt werden. 
 Anschließend den Ordner „ui-rbs2“ aus dem Bausteinverzeichnis buerger_skb2_baustein/Ressourcen/plugins in das Modellverzeichnis <Modellname-Assistent>-Ressourcen/plugins kopieren. 
