@@ -366,18 +366,20 @@ function prefillLand(){
 // ---- und liefert die Bezirksnummer.
 function validateAddress(){
     var res = false
-    if (myForm.F00000035h.toLowerCase() !== "berlin"){
-        return false;
-    }else if (myForm.F00000035h.toLowerCase() == "berlin") {
-    if (myForm.bzrnr != '') {
-                var adr = callbzrinfo();
-                myForm.bzrnameh = adr.bzrname;
-                myForm.otnameh = adr.otname;
-                res = true;
+    if (myForm.transaction){
+        if (myForm.F00000035h.toLowerCase() !== "berlin"){
+            return false;
+        }else if (myForm.F00000035h.toLowerCase() == "berlin") {
+            if (myForm.bzrnr != '') {
+                    var adr = callbzrinfo();
+                    myForm.bzrnameh = adr.bzrname;
+                    myForm.otnameh = adr.otname;
+                    res = true;
+                }
+            }else{
+                res = false
             }
-        }else{
-            res = false
-        }    
+    }    
 	return res;
 }
 
